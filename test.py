@@ -48,4 +48,4 @@ if uploaded_file:
     st.write(os.listdir(UPLOAD_FOLDER))
 
 st.markdown("---")
-st.caption("Made with ❤️ using Streamlit and rembg")
+st.caption("Made with ❤️ via Mahdi Drgn")
