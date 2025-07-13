@@ -1,9 +1,4 @@
 streamlit
-scikit-learn
-pandas
-numpy
-matplotlib
-plotly
-altair
-rembg 
+rembg
+onnxruntime
 pillow
