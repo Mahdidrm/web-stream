@@ -79,6 +79,6 @@ if uploaded_file:
 
 # Footer
 st.markdown(
-    """<div class="footer">Built with ❤️ using Streamlit & rembg | 2025</div>""",
+    """<div class="footer">Built with ❤️by Mahdi | 2025</div>""",
     unsafe_allow_html=True
 )
