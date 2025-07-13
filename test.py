@@ -23,13 +23,13 @@ if uploaded_file:
         f.write(uploaded_file.getbuffer())
 
     image = Image.open(input_path)
-    st.image(image, caption="Original Image", use_column_width=True)
+    st.image(image, caption="Original Image", use_container_width=True)
 
     with st.spinner("Removing background..."):
         result = remove(image)
 
     st.success("✅ Background removed!")
-    st.image(result, caption="Transparent Background", use_column_width=True)
+    st.image(result, caption="Transparent Background", use_container_width=True)
 
     # Prepare download
     buffer = io.BytesIO()
@@ -42,6 +42,10 @@ if uploaded_file:
         file_name="no_background.png",
         mime="image/png"
     )
+
+    # Optional: show saved files
+    st.write("📂 Uploaded images this session:")
+    st.write(os.listdir(UPLOAD_FOLDER))
 
 st.markdown("---")
 st.caption("Made with ❤️ using Streamlit and rembg")
